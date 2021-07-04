@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+}
+svg{
+    width:100vh;
+    height: 50vh;
+}
+
+#whole_truck {
+    animation-name: moving;
+    animation-timing-function: linear;
+    animation-duration:  7s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(900px);
+    }
+    70%{
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(-600px);
+    }
+}
+
+#wood{
+    animation-name: swing;
+    animation-timing-function: linear;
+    animation-duration:  4s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes swing {
+    0% {
+        transform: translate(0px) rotate(0deg);
+
+    }
+    25%{
+        transform: translate(-5.5px) rotate(8deg);
+    }
+    70%{
+        transform: translate(5.5px) rotate(-8deg);
+    }
+
+    100% {
+        transform: translate(0px) rotate(0deg);
+    }
+}
